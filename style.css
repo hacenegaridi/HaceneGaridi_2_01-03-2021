@@ -1,3 +1,5 @@
+/*Header*/
+
 header {
 	display: flex;
 	justify-content: space-between;
@@ -7,6 +9,9 @@ h1 img {
 	margin-left: 50px;
 	margin-top: 20px;
 }
+
+/*Navigation*/
+
 nav ul {
 	display: flex;
 	margin-right: 50px;
@@ -21,28 +26,119 @@ nav ul li a {
 	padding-left: 30px;
 	padding-right: 30px;
 }
+.hebergement {
+	color: #0065fc;
+}
 .activité {
 	color: rgb(61, 61, 61);
 }
 .inscrire {
 	font-weight: bold;
+	color: #0065fc;
 }
-section {
+
+/*Titre principal*/
+
+.titre {
+	padding-left: 50px;
+}
+
+/*Barre de recherche*/
+
+.icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 50px;
+	background-color: #f2f2f2;
+	border-radius: 10px 0 0 10px;
+}
+form {
+	display: flex;
+	padding: 50px;
+}
+.fa-map-marker-alt {
+	font-size: 20px;
+}
+input.marseille {
+	padding-left: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	border: 0px;
+}
+.search {
+	background-color: #0065fc;
+	color: white;
+	font-weight: bold;
+	border-radius: 0 10px 10px 0;
+	border: 0px;
+}
+
+/*Filtres*/
+
+#filtres-section {
+	display: flex;
+	align-items: center;
+	margin: 32px 0px 41px 0px;
+}
+
+.filtre-bouton {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin-left: 30px;
+	flex-wrap: wrap;
+}
+
+.circle-icon-filter {
+	width: 50px;
+	height: 50px;
+	background-color: #deebff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 19px;
+	left: 1px;
+}
+
+.filtre {
+	display: flex;
+	flex-wrap: wrap;
+}
+.fa-money-bill-wave,
+.fa-male,
+.fa-heart,
+.fa-dog {
+	color: #0065fc;
+	font-size: 1.5em;
+}
+.filtre p {
+	height: 50px;
+	display: flex;
+	border: 2px solid #d9d9d9;
+	padding: 0px 25px 0px 65px;
+	align-items: center;
+	border-radius: 25px;
+	font-weight: bold;
+}
+
+.titre_filtres p {
+	font-weight: bold;
 	margin-left: 50px;
 }
-#search {
-	border: 2px solid black;
-	border-radius: 30px;
-	height: 40px;
-	padding-left: 20px;
-	font-weight: bold;
+.logements {
+	margin: 0px 0px 35px 17px;
 }
-#button {
-	background-color: #339cff;
-	border: 0px solid black;
-	border-radius: 30px;
-	height: 40px;
-	cursor: pointer;
-	color: blanchedalmond;
-	font-weight: bold;
+.fas.fa-info-circle {
+	color: #0065fc;
+	margin-left: 50px;
+}
+
+/*Hébergement à Marseille*/
+
+.hebergements {
+	display: flex;
 }
