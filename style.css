@@ -100,7 +100,7 @@ input.marseille {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 19px;
+	top: 19 px;
 	left: 1px;
 }
 
@@ -138,7 +138,60 @@ input.marseille {
 }
 
 /*Hébergement à Marseille*/
+#hebergements_a_marseille {
+	border-radius: 20px;
+	height: 600px;
+	width: 900px;
+	background-color: #f2f2f2;
+	margin-left: 50px;
+}
 
-.hebergements {
+#container {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0px;
+}
+.titre_hebergements_a_marseille {
+	padding: 20px;
+	margin: 0px;
+	padding-left: 30px;
+}
+.hosting {
+	width: 250px;
+	height: 200px;
+	background-color: white;
+	border-radius: 15px;
+	margin: 15px;
+}
+.photo_hebergement {
+	padding: 5px;
+	width: calc(100% - 10px);
+	height: 115px;
+	border-radius: 15px 15px 0 0;
+	object-fit: cover;
+}
+h3 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 17px;
+}
+p {
+	margin: 0;
+	font-size: 15px;
+}
+.description {
+	padding-left: 10px;
+}
+.fa-star {
+	color: #0065fc;
+}
+.montrer-plus {
+	font-weight: bold;
+	padding: 10px;
+	font-size: 17px;
+	padding-left: 30px;
+}
+.grey-star {
+	color: #f2f2f2;
 }
