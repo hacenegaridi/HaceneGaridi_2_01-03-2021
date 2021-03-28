@@ -246,8 +246,10 @@ h3 {
 	margin-right: 50px;
 }
 .titre_les_plus_populaires {
+	margin: 0px;
 	font-size: large;
-	margin-bottom: 25px;
+	font-weight: bold;
+	margin-bottom: 21px;
 }
 .fa-chart-line {
 	color: black;
@@ -291,4 +293,54 @@ h3 {
 .hebergement_notation_populaire {
 	max-width: 94px;
 	max-height: 15px;
+}
+/* Activities */
+.activités {
+	margin: 50px;
+}
+.activites_form {
+	display: grid;
+	grid-template: repeat(12, 1fr) / repeat(4, 1fr);
+	gap: 37.5px;
+	height: 450px;
+	grid-auto-flow: column;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.row2 {
+	grid-row-end: span 13;
+}
+
+.row6 {
+	grid-row-end: span 7;
+}
+
+.row5 {
+	grid-row-end: span 6;
+}
+
+.contenue_activité {
+	display: grid;
+	grid-template-rows: 1fr 50px;
+	height: 100%;
+	box-sizing: border-box;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 0 7px #c1c1c1;
+}
+
+.contenue_activité img {
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+}
+
+.description_activités {
+	align-self: center;
+	background-color: #fff;
+	padding-left: 10px;
+	font-size: 1.1rem;
+	font-weight: bold;
 }
