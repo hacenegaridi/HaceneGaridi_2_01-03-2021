@@ -1,3 +1,8 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
 /*Header*/
 
 header {
@@ -56,7 +61,8 @@ nav ul li a {
 }
 form {
 	display: flex;
-	padding: 50px;
+	padding-left: 30px;
+	margin: 20px;
 }
 .fa-map-marker-alt {
 	font-size: 20px;
@@ -100,7 +106,7 @@ input.marseille {
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 2px;
+	top: 18px;
 	left: 1px;
 }
 
@@ -124,74 +130,165 @@ input.marseille {
 	border-radius: 25px;
 	font-weight: bold;
 }
+/*information*/
 
 .titre_filtres p {
 	font-weight: bold;
 	margin-left: 50px;
 }
-.logements {
+.information {
 	margin: 0px 0px 35px 17px;
 }
 .fas.fa-info-circle {
 	color: #0065fc;
 	margin-left: 50px;
 }
-
-/*Hébergement à Marseille*/
-#hebergements_a_marseille {
-	border-radius: 20px;
-	height: 600px;
-	width: 900px;
-	background-color: #f2f2f2;
-	margin-left: 50px;
-}
-
-#container {
+/*hebergement à Marseille*/
+#hebergement {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0px;
+	margin-bottom: 56px;
+}
+
+#hebergements_a_marseille {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	border-radius: 20px;
+	padding: 44px 36px 44px 36px;
+	max-width: 805px;
+	margin-left: 50px;
 }
 .titre_hebergements_a_marseille {
-	padding: 20px;
 	margin: 0px;
-	padding-left: 30px;
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 21px;
 }
-.hosting {
-	width: 250px;
-	height: 200px;
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	margin-bottom: 60px;
+}
+
+.hebergement_carte {
+	border: 3px solid white;
+	border-radius: 20px;
+	padding: 5px 5px 10px 5px;
 	background-color: white;
-	border-radius: 15px;
-	margin: 15px;
+	max-width: 236px;
+	margin-bottom: 28px;
 }
+
 .photo_hebergement {
-	padding: 5px;
-	width: calc(100% - 10px);
-	height: 115px;
-	border-radius: 15px 15px 0 0;
+	width: 236px;
 	object-fit: cover;
+	height: 112px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.hebergement_contenu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-left: 16px;
+}
+
+.titre_contenu {
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding: 0px;
 }
 h3 {
-	margin: 0;
-	font-weight: 700;
-	font-size: 17px;
-}
-p {
-	margin: 0;
-	font-size: 15px;
-}
-.description {
-	padding-left: 10px;
-}
-.fa-star {
-	color: #0065fc;
-}
-.montrer-plus {
+	margin: 0px;
+	color: black;
 	font-weight: bold;
-	padding: 10px;
-	font-size: 17px;
-	padding-left: 30px;
 }
-.grey-star {
-	color: #f2f2f2;
+.prix_nuit {
+	margin: 0px;
+	color: black;
+}
+.hebergement_notation {
+	padding-bottom: 11px;
+	padding: 0px;
+}
+.hebregement_liens {
+	text-decoration: none;
+}
+.fas.fa-star {
+	color: #0065fc;
+	font-size: 13px;
+}
+.fas.fa-star.grey-star {
+	color: grey;
+}
+.hebergement_montrer_plus {
+	font-weight: bold;
+}
+/*Les plus populaires*/
+
+#hebergements_populaires {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 45px 38px 31px 45px;
+	max-width: 345px;
+	margin-right: 50px;
+}
+.titre_les_plus_populaires {
+	font-size: large;
+	margin-bottom: 25px;
+}
+.fa-chart-line {
+	color: black;
+	padding-left: 150px;
+}
+
+.hebergement_les_plus_populaires {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.populaire_carte {
+	border: 3px solid white;
+	border-radius: 20px;
+	display: flex;
+	background-color: white;
+	padding: 6px 58px 6px 6px;
+	max-width: 284px;
+	max-height: 135px;
+	margin-bottom: 29px;
+}
+
+.photo_populaire {
+	object-fit: cover;
+	width: 132px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.populaire_contenu {
+	padding: 7px 0px 7px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.titre_populaire_contenu {
+	padding-bottom: 14px;
+}
+
+.hebergement_notation_populaire {
+	max-width: 94px;
+	max-height: 15px;
 }
