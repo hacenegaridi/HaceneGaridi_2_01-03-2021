@@ -344,3 +344,28 @@ a {
 	font-size: 1.1rem;
 	font-weight: bold;
 }
+/* Footer */
+.flex {
+	display: flex;
+}
+footer {
+	padding: 40px 50px 50px;
+	background-color: #f2f2f2;
+}
+
+footer div {
+	flex: 1;
+}
+
+footer li {
+	margin-bottom: 15px;
+}
+footer ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+footer a:hover {
+	font-weight: 600;
+	color: #0065fc;
+}
