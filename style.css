@@ -1,6 +1,8 @@
 body {
-	margin: 0px;
+	max-width: 1440px;
+	margin: auto;
 	padding: 0px;
+	font-family: "Raleway";
 }
 
 /*Header*/
@@ -41,44 +43,126 @@ nav ul li a {
 	font-weight: bold;
 	color: #0065fc;
 }
+/* reponsive header*/
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: column;
+	}
+	h1 img {
+		left: 10px;
+		margin-left: 40px;
+	}
+	.inscrire {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	ul {
+		padding-left: 0;
+	}
+	.hebergements-activites {
+		width: 50%;
+		padding-top: 0px;
+		text-align: center;
+	}
+}
 
 /*Titre principal*/
 
-.titre {
+.titre-principale {
 	padding-left: 50px;
 }
+.sous-titre {
+	padding-left: 50px;
+}
+@media screen and (max-width: 768px) {
+	.titre-principale {
+		text-align: center;
+		width: 80%;
+		padding-top: 10px;
+	}
+	.sous-titre {
+		text-align: center;
+		width: 80%;
+	}
+}
 
-/*Barre de recherche*/
+/*barre de recherche*/
 
-.icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-	width: 50px;
+.gps-logo {
+	position: relative;
+	height: 40px;
 	background-color: #f2f2f2;
-	border-radius: 10px 0 0 10px;
+	width: 54px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
-form {
+.search-bar {
 	display: flex;
-	padding-left: 30px;
-	margin: 20px;
+	justify-content: flex-start;
 }
+
 .fa-map-marker-alt {
-	font-size: 20px;
+	position: absolute;
+	color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
-input.marseille {
+.type-search {
 	padding-left: 15px;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 18px;
 	border: 0px;
+	color: black;
 }
-.search {
+
+#search-section {
+	display: flex;
+	height: 40px;
+	margin-top: 15px;
+	padding-left: 50px;
+	padding-top: 15px;
+}
+
+.rechercher {
 	background-color: #0065fc;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 30%;
+	height: 40px;
+	border: none;
 	color: white;
+	outline: none;
 	font-weight: bold;
-	border-radius: 0 10px 10px 0;
-	border: 0px;
+}
+
+.rechercher_loupe {
+	display: none;
+}
+@media all and (max-width: 768px) {
+	.rechercher {
+		display: none;
+	}
+
+	.rechercher_loupe {
+		display: block;
+		width: 40px;
+		background-color: #0065fc;
+		color: white;
+		font-weight: bold;
+		border: none;
+		border-radius: 1rem 1rem 1rem 1rem;
+	}
+
+	.rechercher_loupe .fas {
+		color: white;
+	}
+	#search-section {
+		display: flex;
+		justify-content: center;
+		padding-left: 0px;
+	}
 }
 
 /*Filtres*/
@@ -130,6 +214,38 @@ input.marseille {
 	border-radius: 25px;
 	font-weight: bold;
 }
+
+@media all and (max-width: 768px) {
+	.titre_filtres p {
+		font-weight: bold;
+		margin-left: 50px;
+	}
+
+	.filtre-bouton {
+		margin-bottom: 5px;
+	}
+
+	#filtres-section {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.titre_filtres {
+		align-self: flex-start;
+		margin: 0px 0px 20px 30px;
+	}
+	.fas.fa-info-circle {
+		color: #0065fc;
+	}
+
+	.information {
+		margin: 0px 0px 35px 17px;
+		text-align: justify;
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+}
+
 /*information*/
 
 .titre_filtres p {
@@ -212,6 +328,7 @@ h3 {
 	margin: 0px;
 	color: black;
 	font-weight: bold;
+	font-size: 15px;
 }
 .prix_nuit {
 	margin: 0px;
@@ -322,19 +439,16 @@ a {
 }
 
 .contenue_activité {
-	display: grid;
-	grid-template-rows: 1fr 50px;
 	height: 100%;
 	box-sizing: border-box;
 	border-radius: 15px;
-	overflow: hidden;
 	box-shadow: 0 0 7px #c1c1c1;
 }
 
 .contenue_activité img {
 	width: 100%;
 	object-fit: cover;
-	height: 100%;
+	height: calc(100% - 50px);
 }
 
 .description_activités {
@@ -345,27 +459,39 @@ a {
 	font-weight: bold;
 }
 /* Footer */
-.flex {
+
+footer {
+	background-color: #f2f2f2;
+	bottom: 0;
+	border-top: 0;
+	position: inherit;
+	justify-content: space-around;
 	display: flex;
 }
-footer {
-	padding: 40px 50px 50px;
-	background-color: #f2f2f2;
+
+@media screen and (max-width: 768px) {
+	footer {
+		flex-flow: row wrap;
+	}
 }
 
-footer div {
-	flex: 1;
+.bloc-footer {
+	padding: 20px;
+	width: 100%;
+	padding-left: 10%;
+}
+li {
+	list-style: none;
+	color: black;
 }
 
-footer li {
-	margin-bottom: 15px;
-}
-footer ul {
-	list-style-type: none;
-	padding-left: 0px;
+ul.liste {
+	color: #464646;
+	padding: 0;
+	line-height: 2rem;
 }
 
-footer a:hover {
-	font-weight: 600;
-	color: #0065fc;
+#footer .bloc-footer .liste {
+	flex-shrink: 1;
+	list-style: none;
 }
