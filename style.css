@@ -528,14 +528,14 @@ a {
 		flex-direction: column;
 		border-radius: 10px;
 	}
-	/*.contenue_activité {
+	.contenue_activité {
 		margin: 0px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: space-between;
-	}*/
+	}
 	.contenue_activité img {
 		width: 334px;
 		height: 134px;
