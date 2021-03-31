@@ -510,6 +510,44 @@ a {
 	font-size: 1.1rem;
 	font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+	.activités {
+		margin-top: 0px;
+		margin-bottom: 62px;
+		display: block;
+	}
+	.activities h2 {
+		padding-left: 20px;
+		margin: 0px;
+	}
+	.activites_form {
+		display: flex;
+		width: 334px;
+		height: auto;
+		flex-direction: column;
+		border-radius: 10px;
+	}
+	/*.contenue_activité {
+		margin: 0px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}*/
+	.contenue_activité img {
+		width: 334px;
+		height: 134px;
+		object-fit: cover;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.description_activités {
+		padding-top: 10px;
+	}
+}
+
 /* Footer */
 
 footer {
