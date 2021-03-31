@@ -450,6 +450,19 @@ h3 {
 	max-width: 94px;
 	max-height: 15px;
 }
+@media screen and (max-width: 768px) {
+	#hebergements_populaires {
+		display: flex;
+		background-color: #f2f2f2;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0px;
+		position: inherit;
+		justify-content: center;
+	}
+}
+
 /* Activities */
 .activités {
 	margin: 50px;
