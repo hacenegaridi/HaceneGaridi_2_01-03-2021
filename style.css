@@ -226,8 +226,8 @@ nav ul li a {
 	}
 
 	#filtres-section {
+		display: flex;
 		flex-direction: column;
-		text-align: center;
 	}
 
 	.titre_filtres {
@@ -351,6 +351,45 @@ h3 {
 .hebergement_montrer_plus {
 	font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+	#hebergement {
+		flex-direction: column-reverse;
+		margin-bottom: 0px;
+	}
+	#hebergements_a_marseille {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+		border-radius: 20px;
+		padding: 44px 36px 44px 36px;
+		max-width: 805px;
+		margin-left: 50px;
+		margin: auto;
+	}
+	.container {
+		margin: 0px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+
+	.photo_hebergement {
+		width: 326px;
+		object-fit: cover;
+		height: 114px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.hebergement_montrer_plus {
+		font-weight: bold;
+		margin-top: 0px;
+	}
+}
+
 /*Les plus populaires*/
 
 #hebergements_populaires {
