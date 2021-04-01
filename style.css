@@ -64,6 +64,7 @@ nav ul li a {
 		padding-bottom: 10px;
 		border-bottom: 3px solid #0065fc;
 	}
+
 	ul {
 		padding-left: 0;
 	}
@@ -186,7 +187,7 @@ nav ul li a {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	margin-left: 30px;
+	margin-left: 50px;
 	flex-wrap: wrap;
 }
 
@@ -227,7 +228,7 @@ nav ul li a {
 @media all and (max-width: 768px) {
 	.titre_filtres p {
 		font-weight: bold;
-		margin-left: 50px;
+		margin-left: 0px;
 	}
 
 	.filtre-bouton {
@@ -246,6 +247,7 @@ nav ul li a {
 	.fas.fa-info-circle {
 		color: #0065fc;
 		margin-left: 0px;
+		padding-left: 0px;
 	}
 
 	.information {
@@ -366,32 +368,21 @@ h3 {
 	#hebergement {
 		display: flex;
 		flex-direction: column-reverse;
+		margin-left: 0px;
 	}
 	#hebergements_a_marseille {
-		/*background-color: white;
+		background-color: white;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-content: space-between;
-		border-radius: 20px;
-		padding: 44px 36px 44px 36px;
-		max-width: 805px;
-		margin-left: 50px;
-		margin: auto;*/
-		margin-top: 0px;
-		margin-bottom: 62px;
-		display: flex;
-		flex-direction: column;
-		background-color: gray;
-	}
-	.container {
-		/*	margin: 0px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 		justify-content: space-between;
 		align-content: space-between;
-		border-radius: 10px;*/
+		border-radius: 0px;
+		width: 355px;
+		margin-left: 0px;
+		margin-bottom: 0px;
+	}
+	.container {
+		width: auto;
 		margin: 0px;
 		display: flex;
 		flex-direction: row;
@@ -400,6 +391,14 @@ h3 {
 		align-content: space-between;
 	}
 
+	.hebergement_carte {
+		border: 3px solid white;
+		border-radius: 20px;
+		padding: 5px 5px 10px 5px;
+		background-color: white;
+		max-width: 334px;
+		margin-bottom: 28px;
+	}
 	.photo_hebergement {
 		width: 326px;
 		object-fit: cover;
@@ -483,6 +482,16 @@ h3 {
 		border-radius: 0px;
 		position: inherit;
 		justify-content: center;
+	}
+	.populaire_carte {
+		border: 3px solid white;
+		border-radius: 20px;
+		display: flex;
+		background-color: white;
+		padding: 6px 58px 6px 6px;
+		max-width: 334px;
+		max-height: 135px;
+		margin-bottom: 29px;
 	}
 }
 
@@ -580,6 +589,9 @@ footer {
 	position: inherit;
 	justify-content: space-around;
 	display: flex;
+}
+.liste a:hover {
+	color: #0065fc;
 }
 
 @media screen and (max-width: 768px) {
