@@ -190,6 +190,9 @@ nav ul li a {
 	margin-left: 50px;
 	flex-wrap: wrap;
 }
+.filtre-bouton:hover {
+	color: #0065fc;
+}
 
 .circle-icon-filter {
 	width: 50px;
